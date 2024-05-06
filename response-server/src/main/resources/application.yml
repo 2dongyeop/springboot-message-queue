@@ -2,5 +2,16 @@ spring:
   application:
     name: response-server
 
+#  jackson:
+#    serialization:
+#      write-dates-as-timestamps: false
+
 server:
   port: 8882
+
+message:
+  topic: dongyeop
+
+kafka:
+  url: localhost:9092
+  group-id: group_1
