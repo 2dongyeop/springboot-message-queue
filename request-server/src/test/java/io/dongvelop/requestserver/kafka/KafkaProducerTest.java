@@ -38,7 +38,7 @@ class KafkaProducerTest {
     void kafkaMessageSendObject() {
 
         // given
-        final var message = new CommonMessage("content", LocalDateTime.now());
+        final var message = new CommonMessage("content");
 
         // when
         kafkaProducer.send(message);

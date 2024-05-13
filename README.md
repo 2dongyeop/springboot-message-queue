@@ -39,3 +39,21 @@ $ docker compose -f docker-compose-kafka.yml up -d
 
 아래 경로에 있는 테스트 코드 실행시, 응답 서버 콘솔에서 결과 확인 가능
 - `src/test/io/dongvelop/requestserver/kafka/KafkaProducerTest`
+
+<br/>
+
+### ActiveMQ
+1. 도커로 ActiveMQ 실행하기
+```bash
+# 프로젝트 루트에서 아래 명령어 실행
+$ docker compose -f docker-compose-activemq.yml up
+
+# 백그라운드에서 실행
+$ docker compose -f docker-compose-activemq.yml up -d
+```
+
+2. ActiveMQ 웹 관리 콘솔 확인하기
+```
+URL : localhost:8161
+Account : admin/admin
+```

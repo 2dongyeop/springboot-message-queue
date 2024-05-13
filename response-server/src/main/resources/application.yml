@@ -2,9 +2,10 @@ spring:
   application:
     name: response-server
 
-#  jackson:
-#    serialization:
-#      write-dates-as-timestamps: false
+  activemq:
+    broker-url: tcp://localhost:61616  # default
+    user: admin                        # default
+    password: admin                    # default
 
 server:
   port: 8882
@@ -15,3 +16,7 @@ message:
 kafka:
   url: localhost:9092
   group-id: group_1
+
+activemq:
+  queue:
+    name: sample-queue
