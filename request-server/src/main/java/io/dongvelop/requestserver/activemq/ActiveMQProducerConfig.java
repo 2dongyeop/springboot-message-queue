@@ -43,7 +43,7 @@ public class ActiveMQProducerConfig {
      * @return Queue 빈 객체
      */
     @Bean
-    public Queue queue() {
+    public Queue activeMQQueue() {
         return new ActiveMQQueue(queueName);
     }
 

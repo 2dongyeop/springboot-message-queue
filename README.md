@@ -57,3 +57,21 @@ $ docker compose -f docker-compose-activemq.yml up -d
 URL : localhost:8161
 Account : admin/admin
 ```
+
+<br/>
+
+### RabbitMQ
+1. 도커로 RabbitMQ 실행하기
+```bash
+# 프로젝트 루트에서 아래 명령어 실행
+$ docker compose -f docker-compose-rabbitmq.yml up
+
+# 백그라운드에서 실행
+$ docker compose -f docker-compose-rabbitmq.yml up -d
+```
+
+2. ActiveMQ 웹 관리 콘솔 확인하기
+```
+URL : localhost:15672
+Account : guest/guest
+```

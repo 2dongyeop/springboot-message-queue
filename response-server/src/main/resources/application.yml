@@ -7,6 +7,12 @@ spring:
     user: admin                        # default
     password: admin                    # default
 
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
 server:
   port: 8882
 
@@ -20,3 +26,11 @@ kafka:
 activemq:
   queue:
     name: sample-queue
+
+rabbitmq:
+  queue:
+    name: sample.queue
+  exchange:
+    name: sample.exchange
+  routing:
+    key: sample.key
